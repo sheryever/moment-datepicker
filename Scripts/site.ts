@@ -12,7 +12,7 @@ interface Window extends /*ViewCSS, */MSEventAttachmentTarget, MSWindowExtension
 
 $(function () {
     window.prettyPrint && window.prettyPrint();
-    moment.lang('en');
+    moment.locale('en');
     //moment.lang('es');
 
     var model = {

@@ -159,9 +159,9 @@ interface Moment {
     isSame(b: Date, granularity: string): boolean;
     isSame(b: Array, granularity: string): boolean;
 
-    lang(language: string): void;
-    lang(reset: boolean): void;
-    lang(): string;
+    locale(language: string): void;
+    locale(reset: boolean): void;
+    locale(): string;
 
 }
 
@@ -247,6 +247,8 @@ interface MomentStatic {
     isMoment(m: any): boolean;
     lang(language: string): any;
     lang(language: string, definition: MomentLanguage): any;
+    locale(language: string): any;
+    locale(language: string, definition: MomentLanguage): any;
     months: string[];
     monthsShort: string[];
     weekdays: string[];
